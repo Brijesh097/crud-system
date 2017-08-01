@@ -1,0 +1,47 @@
+body {
+	background-color: #fff;
+}
+
+.navbar.navbar-danger {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+.form-group .form-control {
+	width: 40%;
+	margin-top: 23px;
+}
+
+.form-group {
+	margin-top: 50px;
+}
+
+a:hover, a:focus {
+	color: #4384bb;
+}
+
+.btn-group>.btn:first-child {
+	    background-color: #afafaf;
+	    color: #fff;
+	    font-size: 12px;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 7%;
+}
+
+.btn-group.open > .dropdown-toggle.btn, .btn-group.open > .dropdown-toggle.btn.btn-default {
+	background-color: #8e8e8e;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+	font-size: 12px;
+}
+
+.dropdown-menu li a:hover {
+	background-color: #8e8e8e;
+}

@@ -88,7 +88,7 @@
 				}
 
 			?>
-			<form class="form" method="post" action="sign-up.php">
+			<form class="form" method="post" action="create.php">
 				<div class="form-group label-floating has-success">
 					<h3>Username</h3>
 					<input type="text" class="form-control" id="username" name="username" placeholder="Enter username">

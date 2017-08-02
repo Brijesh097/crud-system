@@ -63,7 +63,20 @@
 				if (isset($_POST['submit'])) {
 					
 					$username = $_POST['username'];
-					$password = md5($_POST['password']);
+					$password = md5($_POST['password']);	// Password encryption using md5
+
+					// METHOD 1: Using BLOWFISH's $2y$ format and salt for encryption (More Secure)
+
+					// CRYPT_BLOWFISH : Blowfish hashing with a salt as follows: "$2a$", "$2x$" or "$2y$", a two digit cost parameter, "$", and 22 characters from the alphabet "./0-9A-Za-z". Using characters outside of this range in the salt will cause crypt() to return a zero-length string. The two digit cost parameter is the base-2 logarithm of the iteration count for the underlying Blowfish-based hashing algorithmeter and must be in range 04-31, values outside this range will cause crypt() to fail. Versions of PHP before 5.3.7 only support "$2a$" as the salt prefix: PHP 5.3.7 introduced the new prefixes to fix a security weakness in the Blowfish implementation. Please refer to » this document for full details of the security fix, but to summarise, developers targeting only PHP 5.3.7 and later should use "$2y$" in preference to "$2a$".
+
+					$hashFormat = "$2y$10$";	// $10$ => Makes it 10 times secure.
+					$salt = "iusesomecrazystrings22";
+					$hashFormat_and_salt = $hashFormat . $salt;
+					$password = crypt($password, $hashFormat_and_salt);
+
+					// METHOD 2: Only using 'salt' for encryption (Less secure than METHOD 1)
+					// $salt = "iusesomecrazystrings22";
+					// $password = crypt($password, $salt);
 
 					$connection = mysqli_connect('localhost', 'root', '', 'login');
 					

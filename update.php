@@ -1,5 +1,4 @@
 <?php 
-
 	$connection = mysqli_connect('localhost', 'root', '', 'login');
 	if (!$connection) {
 		die('ERROR! Connection cannot be established');
@@ -28,9 +27,7 @@
 		}
 
 	}
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -85,7 +82,7 @@
 		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    		<ul class="nav navbar-nav navbar-right">
 						<li><a href="create.php">Create</a></li>
-						<li class="active"><a href="">Update</a></li>
+						<li class="active"><a href="update.php">Update</a></li>
 						<li><a href="delete.php">Delete</a></li>
 		    		</ul>
 		    	</div>

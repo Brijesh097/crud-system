@@ -45,7 +45,7 @@
 
 		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    		<ul class="nav navbar-nav navbar-right">
-		    			<li class="active"><a href="">Create</a></li>
+		    			<li class="active"><a href="create.php">Create</a></li>
 						<li><a href="update.php">Update</a></li>
 						<li><a href="delete.php">Delete</a></li>
 		    		</ul>

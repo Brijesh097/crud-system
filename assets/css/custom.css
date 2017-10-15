@@ -1,5 +1,46 @@
 body {
-	background-color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #34e89e);
+    background-size: 500% 500%;
+    font-family: "Raleway", sans-serif;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .navbar.navbar-danger {
@@ -8,40 +49,87 @@ body {
 }
 
 h3 {
-	font-size: 19px;
+    font-size: 19px;
 }
 
 .form-group .form-control {
-	width: 40%;
-	margin-top: 23px;
+    width: 40%;
+    margin-top: 23px;
 }
 
 .form-group {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
-a:hover, a:focus {
-	color: #4384bb;
+.pull-left>ul>li>a {
+    font-weight: bold;
+}
+
+.pull-left>ul>li>a:hover,
+.pull-left>ul>li>a:focus {
+    color: #4384bb;
 }
 
 .btn-group>.btn:first-child {
-	    background-color: #afafaf;
-	    color: #fff;
-	    font-size: 12px;
+    background-color: #afafaf;
+    color: #fff;
+    font-size: 12px;
 }
 
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
-	width: 7%;
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 7%;
 }
 
-.btn-group.open > .dropdown-toggle.btn, .btn-group.open > .dropdown-toggle.btn.btn-default {
-	background-color: #8e8e8e;
+.btn-group.open>.dropdown-toggle.btn,
+.btn-group.open>.dropdown-toggle.btn.btn-default {
+    background-color: #8e8e8e;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li a {
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .dropdown-menu li a:hover {
-	background-color: #8e8e8e;
+    background-color: #8e8e8e;
+}
+
+#bs-example-navbar-collapse-1>ul>li>a:hover {
+    background-color: #EE7752;
+    -webkit-animation: all 1s ease-in-out;
+    -moz-animation: all 1s ease-in-out;
+    animation: all 5s ease-in-out;
+}
+
+#bs-example-navbar-collapse-1>ul>.active {
+    background: linear-gradient(-45deg, #34e89e, #23A6D5, #E73C7E, #EE7752);
+    background-size: 500% 500%;
+    font-family: "Raleway", sans-serif;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+#username,
+#password {
+    color: white;
+}
+
+#username::-webkit-input-placeholder,
+#password::-webkit-input-placeholder {
+    color: white;
+}
+
+#username::-moz-placeholder,
+#password::-moz-placeholder {
+    color: white;
+}
+
+#username:-ms-input-placeholder,
+#password:-ms-input-placeholder {
+    color: white;
+}
+
+#username:-moz-placeholder,
+#password:-moz-placeholder {
+    color: white;
 }
